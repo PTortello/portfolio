@@ -41,13 +41,19 @@ const cresce = keyframes`
   50% {transform: scale(1.04);}
 `
 
-export const Container = styled.div`
+export const SizeDown = styled.div`
+  transform: scale(0.4);
+`
+
+export const Container = styled.div.attrs((props: { left: string; top: string; }) => ({
+	style: {
+		left: props.left,
+		top: props.top
+	}}))`
   position: absolute;
 	height: 300px;
 	width: 500px;
-	left: 50%;
 	margin-left: -250px;
-	top: 40px;
 	animation: ${voo} 6s ease-in-out infinite;
 `
 

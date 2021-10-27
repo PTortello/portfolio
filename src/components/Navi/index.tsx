@@ -1,17 +1,32 @@
-import React from "react";
-import {
-  Container, AsaGrandeEsq, AsaGrandeDir, AsaPequenaEsq, AsaPequenaDir, Corpo
-} from "./styles";
+import { useEffect, useState } from "react";
+import * as S from "./styles";
 
 function Navi() {
+
+  const [mousePosition, setMousePosition] = useState({ x: null, y: null });
+  const {x, y} = mousePosition;
+  
+  useEffect(() => {
+    const mouseMoveHandler = (event: any) => {
+      const { clientX, clientY } = event;
+      setMousePosition({ x: clientX, y: clientY });
+    };
+    document.addEventListener("mousemove", mouseMoveHandler);
+    return () => {
+      document.removeEventListener("mousemove", mouseMoveHandler);
+    };
+  }, []);
+
   return (
-    <Container>
-      <AsaGrandeEsq />
-      <AsaGrandeDir />
-      <AsaPequenaEsq />
-      <AsaPequenaDir />
-      <Corpo />
-    </Container>
+    <S.SizeDown>
+      <S.Container left={`${x}px`} top={`${y}px`}>
+        <S.AsaGrandeEsq />
+        <S.AsaGrandeDir />
+        <S.AsaPequenaEsq />
+        <S.AsaPequenaDir />
+        <S.Corpo />
+      </S.Container>
+    </S.SizeDown>
   );
 }
 
