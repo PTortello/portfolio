@@ -4,11 +4,11 @@ import * as S from "./styles";
 
 function NavBar() {
   return (
-    <S.NavUnlisted>
+    <S.Content>
       <NavLink to='/about'><li>Sobre</li></NavLink>
       <NavLink to='/home'><li>Habilidades</li></NavLink>
       <NavLink to='/projects'><li>Projetos</li></NavLink>
-    </S.NavUnlisted>
+    </S.Content>
   );
 }
 

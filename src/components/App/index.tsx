@@ -10,13 +10,13 @@ function App() {
   return (
     <>
       <NavBar />
+      <Navi />
       <Switch>
         <Route path='/home' component={ Home } />
         <Route path='/about' component={ About } />
         <Route path='/projects' component={ Projects } />
         <Redirect to='/home' />
       </Switch>
-      <Navi />
     </>
   );
 }

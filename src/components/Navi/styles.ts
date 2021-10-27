@@ -1,8 +1,22 @@
 import styled, { keyframes } from 'styled-components';
 
 const voo = keyframes`
-  0%, 100% {transform: translateY(0);}
-	50% {transform: translateY(-45px);}
+  0%, 100% {
+		transform: translateY(0);
+		transform: translateX(0);
+	}
+	20% {
+		transform: translateY(-20px) translateX(30px);
+	}
+	40% {
+		transform: translateY(-50px) translateX(0px);
+	}
+	60% {
+		transform: translateY(-15px) translateX(-35px);
+	}
+	80% {
+		transform: translateY(10px) translateX(20px);
+	}
 `
 
 const asaEsq = keyframes`

@@ -1,8 +1,11 @@
 import React from "react";
+import { Content } from "../../components/Content/styles";
 
 function Home() {
   return (
-    <div>Home</div>
+    <Content>
+      Home
+    </Content>
   );
 }
 
