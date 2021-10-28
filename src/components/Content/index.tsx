@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from 'react-router-dom';
 import * as S from "./styles";
 
-function NavBar() {
+function Content() {
   return (
     <S.Content>
       <NavLink to='/about'><li>Sobre</li></NavLink>
@@ -12,4 +12,4 @@ function NavBar() {
   );
 }
 
-export default NavBar;
+export default Content;

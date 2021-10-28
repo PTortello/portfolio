@@ -1,15 +1,14 @@
-import React from 'react';
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import Home from '../../pages/Home';
 import About from '../../pages/About';
 import Projects from '../../pages/Projects';
-import NavBar from '../NavBar';
+import Header from '../Header';
 import Navi from '../Navi';
 
 function App() {
   return (
     <>
-      <NavBar />
+      <Header />
       <Navi />
       <Switch>
         <Route path='/home' component={ Home } />
