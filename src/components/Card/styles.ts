@@ -41,6 +41,7 @@ export const Container = styled.div`
   font-size: 0.75rem;
   border-radius: 0.5rem;
   overflow: hidden;
+  box-shadow: 3px 3px 7px 0 rgba(0,0,0,0.5);
   
   &:hover ${Title}::after {
     transform: scaleX(1);
