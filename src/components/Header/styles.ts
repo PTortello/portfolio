@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
 
 export const Container = styled.div`
   display: grid;
@@ -23,6 +24,23 @@ export const SubTitle = styled(Title)`
   font-size: medium;
 `
 
+export const Social = styled.div`
+  grid-area: navbar;
+  display: flex;
+`
+
+export const Link = styled(NavLink)`
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  padding: 1px 5px 0px;
+  margin: -2px 10px -2px -2px;
+`
+
+export const Image = styled.img`
+  width: 30px;
+`
+
 export const NavBar = styled.div`
   grid-area: navbar;
   display: flex;
@@ -30,6 +48,7 @@ export const NavBar = styled.div`
 `
 
 export const NavUnlisted = styled.ul`
+  width: 210px;
   display: flex;
   margin: 0px;
   a {
@@ -47,7 +66,7 @@ export const NavUnlisted = styled.ul`
       border-bottom: 3px solid palegreen;
     }
   }
-`;
+`
 
 export const NoMargin = styled.li`
   margin-right: 0px !important;
