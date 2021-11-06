@@ -4,8 +4,8 @@ import { NavLink } from 'react-router-dom';
 export const Container = styled.div`
   display: grid;
   grid-template-areas:
-    'title navbar'
-    'subtitle navbar';
+    'title social navbar'
+    'subtitle social navbar';
   margin-top: 20px;
   margin-left: 2%;
   width: 50%;
@@ -25,8 +25,13 @@ export const SubTitle = styled(Title)`
 `
 
 export const Social = styled.div`
-  grid-area: navbar;
+  grid-area: social;
   display: flex;
+  justify-content: right;
+`
+
+export const NavBar = styled(Social)`
+  grid-area: navbar;
 `
 
 export const Link = styled(NavLink)`
@@ -39,12 +44,6 @@ export const Link = styled(NavLink)`
 
 export const Image = styled.img`
   width: 30px;
-`
-
-export const NavBar = styled.div`
-  grid-area: navbar;
-  display: flex;
-  justify-content: right;
 `
 
 export const NavUnlisted = styled.ul`
