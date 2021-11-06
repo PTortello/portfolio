@@ -56,7 +56,7 @@ const cresce = keyframes`
 `
 
 export const SizeDown = styled.div`
-  transform: scale(0.4);
+  transform: scale(0.25);
 `
 
 export const Container = styled.div.attrs((props: { left: string; top: string; }) => ({

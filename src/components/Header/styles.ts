@@ -8,7 +8,8 @@ export const Container = styled.div`
     'subtitle social navbar';
   margin-top: 20px;
   margin-left: 2%;
-  width: 50%;
+  width: 900px;
+  min-width: 700px;
   align-items: flex-end;
 `
 
@@ -43,6 +44,7 @@ export const Link = styled(NavLink)`
 `
 
 export const Image = styled.img`
+  padding: 0em 0.2em;
   width: 30px;
 `
 
@@ -62,7 +64,7 @@ export const NavUnlisted = styled.ul`
   .active {
     li {
       font-weight: bold;
-      border-bottom: 3px solid palegreen;
+      border-bottom: 3px solid hsl(142 90% 61%);
     }
   }
 `
