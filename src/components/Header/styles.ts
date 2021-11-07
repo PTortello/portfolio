@@ -28,11 +28,12 @@ export const SubTitle = styled(Title)`
 export const Social = styled.div`
   grid-area: social;
   display: flex;
-  justify-content: right;
+  justify-content: center;
 `
 
 export const NavBar = styled(Social)`
   grid-area: navbar;
+  justify-content: right;
 `
 
 export const Link = styled(NavLink)`
@@ -44,8 +45,13 @@ export const Link = styled(NavLink)`
 `
 
 export const Image = styled.img`
-  padding: 0em 0.2em;
+  padding: 0em 0.3em;
   width: 30px;
+  transition: transform 200ms ease;
+
+  &:hover {
+    transform: scale(1.2);
+  }
 `
 
 export const NavUnlisted = styled.ul`
@@ -67,8 +73,4 @@ export const NavUnlisted = styled.ul`
       border-bottom: 3px solid hsl(142 90% 61%);
     }
   }
-`
-
-export const NoMargin = styled.li`
-  margin-right: 0px !important;
 `

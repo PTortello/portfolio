@@ -1,9 +1,10 @@
+import Article from "../../components/Article";
 import { Content } from "../../components/Content/styles";
 
 function Home() {
   return (
     <Content>
-      Home
+      <Article />
     </Content>
   );
 }

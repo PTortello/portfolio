@@ -9,6 +9,6 @@ export const Content = styled.div`
   height: 600px;
   padding: 25px;
   box-shadow: 15px 20px 30px 0 rgba(0,0,0,0.8);
-  color: teal;
+  color: white;
   font-weight: bold;
 `;

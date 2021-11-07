@@ -33,7 +33,6 @@ export const Content = styled.div`
   `
 
 export const Container = styled.div`
-  color: white;
   background-image: url(${(props: { img: string; }) => props.img});
   background-size: cover;
   padding: 8rem 0 0;

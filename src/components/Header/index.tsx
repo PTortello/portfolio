@@ -8,7 +8,7 @@ function Header() {
   return (
     <S.Container>
       <S.Title>Pedro Tortello</S.Title>
-      <S.SubTitle>Desenvolvedor Front-end</S.SubTitle>
+      <S.SubTitle>Desenvolvedor front-end</S.SubTitle>
       <S.Social>
         <S.Link to={{pathname: "https://www.linkedin.com/in/pedrotortello/"}} target="_blank">
           <S.Image src={linkedin} alt='LinkedIn' />
@@ -23,7 +23,7 @@ function Header() {
       <S.NavBar>
         <S.NavUnlisted>
           <NavLink to='/home'><li>Sobre</li></NavLink>
-          <NavLink to='/projects'><S.NoMargin>Projetos</S.NoMargin></NavLink>
+          <NavLink to='/projects'><li>Projetos</li></NavLink>
         </S.NavUnlisted>
       </S.NavBar>
     </S.Container>

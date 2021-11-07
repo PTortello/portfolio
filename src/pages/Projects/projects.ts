@@ -13,7 +13,7 @@ const projects = [
   },
   {
     title: 'Minichat!',
-    description: 'Projeto pessoal de aplicação para troca instantânea de mensagens.',
+    description: 'Projeto pessoal de aplicação para troca de mensagens instantâneas.',
     link: 'https://ptortello.github.io/minichat/',
     button: 'Website',
     img: 'minichat.png',
@@ -57,7 +57,7 @@ const projects = [
   },
   {
     title: 'Portfólio',
-    description: 'Este website foi desenvolvido com o tema do jogo Zelda.',
+    description: 'Website desenvolvido utilizando o jogo Zelda como tema.',
     link: 'https://github.com/PTortello/portfolio/',
     button: 'Repositório',
     img: 'link-navi.png',
