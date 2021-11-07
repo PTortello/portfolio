@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom';
+import routes from '../../constants/routes';
 import * as S from "./styles";
 import linkedin from '../../images/linkedin.svg';
 import github from '../../images/github.svg';
@@ -22,8 +23,8 @@ function Header() {
       </S.Social>
       <S.NavBar>
         <S.NavUnlisted>
-          <NavLink to='/home'><li>Sobre</li></NavLink>
-          <NavLink to='/projects'><li>Projetos</li></NavLink>
+          <NavLink to={routes.home}><li>Sobre</li></NavLink>
+          <NavLink to={routes.projects}><li>Projetos</li></NavLink>
         </S.NavUnlisted>
       </S.NavBar>
     </S.Container>
