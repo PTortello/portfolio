@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.1f8c589d.chunk.css",
+    "main.js": "/portfolio/static/js/main.f87f4331.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.f87f4331.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.37da8305.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.37da8305.js.map",
+    "static/js/2.320d8866.chunk.js": "/portfolio/static/js/2.320d8866.chunk.js",
+    "static/js/2.320d8866.chunk.js.map": "/portfolio/static/js/2.320d8866.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "static/css/main.1f8c589d.chunk.css.map": "/portfolio/static/css/main.1f8c589d.chunk.css.map",
+    "static/js/2.320d8866.chunk.js.LICENSE.txt": "/portfolio/static/js/2.320d8866.chunk.js.LICENSE.txt",
+    "static/media/background.png": "/portfolio/static/media/background.a73b2986.png",
+    "static/media/bike-itau.png": "/portfolio/static/media/bike-itau.5ca048ed.png",
+    "static/media/github.svg": "/portfolio/static/media/github.8bce9409.svg",
+    "static/media/link-navi.png": "/portfolio/static/media/link-navi.884a0837.png",
+    "static/media/linkedin.svg": "/portfolio/static/media/linkedin.1a3b6e53.svg",
+    "static/media/log-ai.png": "/portfolio/static/media/log-ai.a0c6fb08.png",
+    "static/media/minichat.png": "/portfolio/static/media/minichat.c6b1c192.png",
+    "static/media/next.png": "/portfolio/static/media/next.260dbfbe.png",
+    "static/media/whatsapp.svg": "/portfolio/static/media/whatsapp.8cbc096f.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.37da8305.js",
+    "static/js/2.320d8866.chunk.js",
+    "static/css/main.1f8c589d.chunk.css",
+    "static/js/main.f87f4331.chunk.js"
+  ]
+}
