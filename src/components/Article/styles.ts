@@ -16,4 +16,10 @@ export const Container = styled.div`
   background-position: bottom right;
   background-repeat: no-repeat;
   background-blend-mode: soft-light;
+
+  @media (max-width: 799px) {
+    width: 300px;
+    height: unset;
+    font-size: 0.9em;
+  }
 `

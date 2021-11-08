@@ -2,6 +2,10 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 500px;
+
+  @media (max-width: 799px) {
+    width: 260px;
+  }
 `
 
 export const Heading = styled.h2`
