@@ -11,6 +11,15 @@ export const Container = styled.div`
   width: 900px;
   min-width: 700px;
   align-items: flex-end;
+
+  @media (max-width: 799px) {
+    grid-template-areas:
+      'title social'
+      'subtitle navbar';
+    width: 95%;
+    min-width: unset;
+    margin-top: 10px;
+  }
 `
 
 export const Title = styled.div`
@@ -18,22 +27,39 @@ export const Title = styled.div`
   font-family: 'M PLUS Rounded 1c', sans-serif;
   color: white;
   font-size: xx-large;
+
+  @media (max-width: 799px) {
+    font-size: 1.35em;
+    margin-left: 15px;
+  }
 `
 
 export const SubTitle = styled(Title)`
   grid-area: subtitle;
   font-size: medium;
+
+  @media (max-width: 799px) {
+    font-size: small;
+  }
 `
 
 export const Social = styled.div`
   grid-area: social;
   display: flex;
   justify-content: center;
+
+  @media (max-width: 799px) {
+    justify-content: right;
+  }
 `
 
 export const NavBar = styled(Social)`
   grid-area: navbar;
   justify-content: right;
+
+  @media (max-width: 799px) {
+    margin-right: -20px;
+  }
 `
 
 export const Link = styled(NavLink)`
@@ -51,6 +77,11 @@ export const Image = styled.img`
 
   &:hover {
     transform: scale(1.2);
+  }
+  
+  @media (max-width: 799px) {
+    width: 25px;
+    padding: 0;
   }
 `
 
@@ -72,5 +103,11 @@ export const NavUnlisted = styled.ul`
       font-weight: bold;
       border-bottom: 3px solid hsl(142 90% 61%);
     }
+  }
+
+  @media (max-width: 799px) {
+    width: 100%;
+    font-size: small;
+    margin-top: 10px;
   }
 `

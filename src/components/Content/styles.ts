@@ -11,4 +11,11 @@ export const Content = styled.div`
   box-shadow: 15px 20px 30px 0 rgba(0,0,0,0.8);
   color: white;
   font-weight: bold;
+
+  @media (max-width: 799px) {
+    margin: 15px auto;
+    width: 300px;
+    height: unset;
+    min-width: unset;
+  }
 `;

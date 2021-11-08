@@ -8,7 +8,7 @@ function Navi() {
   
   useEffect(() => {
     const mouseMoveHandler = (event: any) => {
-      const { clientX, clientY } = event;
+      const { clientX, clientY } = (window.innerWidth < 800) ? {clientX: 0, clientY: 0} : event;
       setMousePosition({ x: clientX, y: clientY });
     };
     document.addEventListener("mousemove", mouseMoveHandler);

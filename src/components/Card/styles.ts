@@ -30,7 +30,7 @@ export const Content = styled.div`
   );
   transform: translateY(58%);
   transition: transform 500ms ease;
-  `
+`
 
 export const Container = styled.div`
   background-image: url(${(props: { img: string; }) => props.img});
