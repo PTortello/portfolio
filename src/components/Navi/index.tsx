@@ -2,13 +2,13 @@ import { useEffect, useState } from "react";
 import * as S from "./styles";
 
 function Navi() {
-
   const [mousePosition, setMousePosition] = useState({ x: null, y: null });
-  const {x, y} = mousePosition;
-  
+  const { x, y } = mousePosition;
+
   useEffect(() => {
     const mouseMoveHandler = (event: any) => {
-      const { clientX, clientY } = (window.innerWidth < 800) ? {clientX: 0, clientY: 0} : event;
+      const { clientX, clientY } =
+        window.innerWidth < 800 ? { clientX: 0, clientY: 0 } : event;
       setMousePosition({ x: clientX, y: clientY });
     };
     document.addEventListener("mousemove", mouseMoveHandler);

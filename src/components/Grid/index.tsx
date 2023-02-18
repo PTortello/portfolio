@@ -1,23 +1,21 @@
+import { PROJECTS } from "constants/projects";
+import Card from "components/Card";
 import * as S from "./styles";
-import projects from "../../pages/Projects/projects";
-import Card from "../../components/Card";
 
 function Grid() {
   return (
     <S.Container>
-      {projects.map((value, key) => {
-        return (
-          <Card
-            title={value.title}
-            description={value.description}
-            link={value.link}
-            button={value.button}
-            img={value.img}
-            icons={value.icons}
-            key={key}
-          />
-        )
-      })}
+      {PROJECTS.map((project, key) => (
+        <Card
+          title={project.title}
+          description={project.description}
+          link={project.link}
+          button={project.button}
+          img={project.img}
+          icons={project.icons}
+          key={key}
+        />
+      ))}
     </S.Container>
   );
 }

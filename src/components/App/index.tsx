@@ -1,9 +1,9 @@
-import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
-import routes from '../../constants/routes';
-import Home from '../../pages/Home';
-import Projects from '../../pages/Projects';
-import Header from '../Header';
-import Navi from '../Navi';
+import { Switch, Route, Redirect, withRouter } from "react-router-dom";
+import { ROUTES } from "constants/routes";
+import Home from "pages/Home";
+import Projects from "pages/Projects";
+import Header from "components/Header";
+import Navi from "components/Navi";
 
 function App() {
   return (
@@ -11,9 +11,9 @@ function App() {
       <Header />
       <Navi />
       <Switch>
-        <Route path={routes.home} component={ Home } />
-        <Route path={routes.projects} component={ Projects } />
-        <Redirect to={routes.home} />
+        <Route path={ROUTES.HOME} component={Home} />
+        <Route path={ROUTES.PROJECTS} component={Projects} />
+        <Redirect to={ROUTES.HOME} />
       </Switch>
     </>
   );

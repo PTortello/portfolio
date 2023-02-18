@@ -1,6 +1,4 @@
-const routes = {
-  home: '/portfolio',
-  projects: '/projects',
-}
-
-export default routes;
+export const ROUTES = {
+  HOME: "/portfolio",
+  PROJECTS: "/projects",
+};

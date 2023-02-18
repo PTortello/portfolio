@@ -1,5 +1,5 @@
-import Article from "../../components/Article";
-import { Content } from "../../components/Content/styles";
+import Article from "components/Article";
+import { Content } from "components/Content/styles";
 
 function Home() {
   return (

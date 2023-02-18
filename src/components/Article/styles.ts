@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import lingNaviBg from '../../images/link-navi-bg.png';
+import styled from "styled-components";
+import lingNaviBg from "images/link-navi-bg.png";
 
 export const Container = styled.div`
   display: grid;
@@ -9,7 +9,7 @@ export const Container = styled.div`
   margin: 0 auto;
   background-color: #0055ce;
   border-radius: 20px;
-  box-shadow: inset 3px 3px 7px 1px rgba(0,0,0,0.7);
+  box-shadow: inset 3px 3px 7px 1px rgba(0, 0, 0, 0.7);
   font-weight: normal;
   background-image: url(${lingNaviBg});
   background-size: 23%;
@@ -22,4 +22,4 @@ export const Container = styled.div`
     height: unset;
     font-size: 0.9em;
   }
-`
+`;
